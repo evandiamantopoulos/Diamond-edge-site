@@ -11,9 +11,10 @@
 </head>
 <body>
   <canvas id="stars"></canvas>
+
   <header class="header">
     <div class="max">
-      <a class="brand" href="#hero">
+      <a class="brand" href="#hero" aria-label="The Diamond Edge Co.">
         <svg width="18" height="14" viewBox="0 0 36 28" aria-hidden="true">
           <g stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round">
             <path d="M2 10 L8 2 H28 L34 10 L18 26 Z"/>
@@ -25,9 +26,11 @@
       </a>
       <nav class="nav">
         <a href="#who">Who We Are</a>
-        <a href="#proof">Proof</a>
+        <a href="#why">Why Diamond Edge</a>
+        <a href="#how">How It Works</a>
+        <a href="#reviews">Reviews</a>
         <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn small">Contact Us</a>
+        <a href="#contact" class="btn small accent">Contact Us</a>
       </nav>
     </div>
   </header>
@@ -37,58 +40,94 @@
     <section id="hero" class="panel center">
       <div class="inner">
         <h1>Sharper Decisions. Stronger Cases.</h1>
-        <p class="sub">Secure AI for legal teams. Draft, review, and research with verified citations in minutes.</p>
+        <p class="sub">Secure advanced AI software for legal teams. Drafts, review, and research with verified citations in minutes.</p>
         <div class="cta">
-          <a href="#contact" class="btn primary">Book a Demo</a>
-          <a href="#who" class="btn outline">See How It Works</a>
+          <a href="#contact" class="btn accent">Book a Demo</a>
+          <a href="#why" class="btn ghost">See How It Works</a>
         </div>
       </div>
     </section>
 
-    <!-- WHO / HOW & WHY -->
+    <!-- WHO WE ARE / WHY -->
     <section id="who" class="panel">
       <div class="inner max grid two">
         <div>
           <h2>Who We Are</h2>
-          <p>The Diamond Edge Co. builds secure, outcome driven AI for modern legal teams. A private retrieval layer, jurisdiction aware templates, and review workflows help your firm work faster without sacrificing standards.</p>
+          <p>The Diamond Edge Co. builds secure, outcome driven AI for modern legal teams. A private retrieval layer, jurisdiction aware templates, and in the loop review workflows help your firm work faster without sacrificing standards.</p>
           <ul class="bullets">
-            <li><strong>Secure by design</strong>. Isolated cloud, role based access, encryption end to end, full audit trails.</li>
-            <li><strong>Verified intelligence</strong>. Every answer is backed by statutes, cases, and your documents.</li>
-            <li><strong>Law firm ready drafting</strong>. Redlines, summaries, and briefs prepared for partner review.</li>
+            <li><strong>Secure by design.</strong> Isolated cloud, role based access, encryption end to end, complete audit trails.</li>
+            <li><strong>Verified intelligence.</strong> Every answer is backed by statutes, cases, and your documents.</li>
+            <li><strong>Law firm ready drafting.</strong> Redlines, summaries, and briefs prepared for partner review.</li>
           </ul>
         </div>
         <div>
-          <h2>How and Why Diamond Edge</h2>
-          <p>We do not generate text. We deliver jurisdiction specific, fully cited legal work you can trust.</p>
-          <ul class="chips">
-            <li>Jurisdiction aware drafting</li>
-            <li>Source linked findings</li>
-            <li>Policy aware checklists</li>
-            <li>Granular permissions</li>
-            <li>Enterprise SSO</li>
-          </ul>
-          <div class="note">Your AI powered legal department. Precise. Compliant. Fast.</div>
+          <h2>Why Diamond Edge</h2>
+          <p class="lead">Firms do not need more text. You need outcomes you can sign your name to. Diamond Edge delivers jurisdiction specific work with verified citations, fast, defensible, and client ready.</p>
+          <div class="chips">
+            <span>Jurisdiction aware drafting</span>
+            <span>Source linked findings</span>
+            <span>Policy aware checklists</span>
+            <span>Granular permissions</span>
+            <span>Enterprise SSO</span>
+          </div>
+          <p class="note">Your AI powered legal department. Precise. Compliant. Fast.</p>
         </div>
       </div>
     </section>
 
-    <!-- PROOF -->
-    <section id="proof" class="panel">
+    <!-- HOW IT WORKS -->
+    <section id="how" class="panel">
       <div class="inner max">
-        <h2>Proof</h2>
-        <div class="quotes">
-          <blockquote>
-            <p>Turned a two day contract review into thirty minutes with citations we could verify.</p>
-            <footer>Partner, Am Law 100</footer>
-          </blockquote>
-          <blockquote>
-            <p>Chronology and brief builder saved our trial team a full week.</p>
-            <footer>Trial Attorney, Litigation Boutique</footer>
-          </blockquote>
-          <blockquote>
-            <p>The only AI that ships drafts we trust out of the box.</p>
-            <footer>General Counsel, Global SaaS</footer>
-          </blockquote>
+        <h2>How It Works</h2>
+        <p class="lead">A streamlined pipeline that keeps quality and control with your firm.</p>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><h3>Ingest</h3><p>Upload contracts, pleadings, policies, transcripts, and PDFs. Files are private and never used to train third party models.</p></div>
+          <div class="step"><div class="num">2</div><h3>Index</h3><p>We parse, chunk, and embed text, then index it with jurisdiction and matter metadata for precise retrieval.</p></div>
+          <div class="step"><div class="num">3</div><h3>Retrieve</h3><p>Queries pull only the most relevant passages from your library and trusted sources with link back citations.</p></div>
+          <div class="step"><div class="num">4</div><h3>Draft</h3><p>Generate clean drafts, redlines, and memos with inline references. Every statement maps to a source.</p></div>
+          <div class="step"><div class="num">5</div><h3>Review</h3><p>Attorney in the loop review completes the workflow with approvals, export to DOCX, and partner ready summaries.</p></div>
+        </div>
+        <div class="cta centerline">
+          <a href="#contact" class="btn accent">Request a Live Walkthrough</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="panel">
+      <div class="inner max">
+        <h2>Reviews</h2>
+        <div class="reviews">
+          <article class="review">
+            <div class="avatar">AL</div>
+            <div class="meta"><div class="name">Alex Liu</div><div class="role">Partner, Am Law 100</div></div>
+            <p>Turned a two day contract review into thirty minutes. We verified every citation and shipped the draft the same afternoon.</p>
+          </article>
+          <article class="review">
+            <div class="avatar">JR</div>
+            <div class="meta"><div class="name">Jasmine Rao</div><div class="role">General Counsel, Global SaaS</div></div>
+            <p>The only AI that consistently produces drafts we trust. The audit trail makes approvals simple for our board.</p>
+          </article>
+          <article class="review">
+            <div class="avatar">MT</div>
+            <div class="meta"><div class="name">Marco Torres</div><div class="role">Trial Attorney, Litigation Boutique</div></div>
+            <p>Chronology and brief builder saved our team a full week before a hearing. Exhibits, witnesses, and issues were organized perfectly.</p>
+          </article>
+          <article class="review">
+            <div class="avatar">KB</div>
+            <div class="meta"><div class="name">Karen Boyd</div><div class="role">Director, Compliance and Risk</div></div>
+            <p>Policy updates that used to take a month are now done in days. Region specific checklists and citations keep us clean with regulators.</p>
+          </article>
+          <article class="review">
+            <div class="avatar">RS</div>
+            <div class="meta"><div class="name">Rahul Singh</div><div class="role">Deputy GC, Fintech</div></div>
+            <p>Source linked answers changed the way we work. No more guessing where a statement came from. Everything is traceable.</p>
+          </article>
+          <article class="review">
+            <div class="avatar">EP</div>
+            <div class="meta"><div class="name">Elena Park</div><div class="role">Associate, Corporate</div></div>
+            <p>First drafts are actually usable. Redlines land in Word, and I spend time on strategy instead of cleanup.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -100,46 +139,25 @@
         <div class="pricing">
           <div class="card">
             <h3>Starter</h3>
-            <div class="prices">
-              <span class="was">$3,000<span class="unit">/mo</span></span>
-              <span class="now">$1,500<span class="unit">/mo</span></span>
-            </div>
+            <div class="prices"><span class="was">$3,000<span class="unit">/mo</span></span><span class="now">$1,500<span class="unit">/mo</span></span></div>
             <div class="offer">Limited time. 50% off.</div>
-            <ul>
-              <li>5 full access user profiles linked to one firm subscription</li>
-              <li>Universal document review</li>
-              <li>Email support</li>
-            </ul>
-            <a class="btn outline w" href="#contact">Get Started</a>
+            <ul><li>5 full access user profiles linked to one firm subscription</li><li>Universal document review</li><li>Email support</li></ul>
+            <a class="btn accent w" href="#contact">Get Started</a>
           </div>
           <div class="card pop">
             <div class="badge">Most Popular</div>
             <h3>Pro</h3>
-            <div class="prices">
-              <span class="was">$6,000<span class="unit">/mo</span></span>
-              <span class="now">$3,000<span class="unit">/mo</span></span>
-            </div>
+            <div class="prices"><span class="was">$6,000<span class="unit">/mo</span></span><span class="now">$3,000<span class="unit">/mo</span></span></div>
             <div class="offer">Limited time. 50% off.</div>
-            <ul>
-              <li>20 full access user profiles linked to one firm subscription</li>
-              <li>Verified legal research</li>
-              <li>Priority support</li>
-            </ul>
-            <a class="btn primary w" href="#contact">Choose Pro</a>
+            <ul><li>20 full access user profiles linked to one firm subscription</li><li>Verified legal research</li><li>Priority support</li></ul>
+            <a class="btn accent w" href="#contact">Choose Pro</a>
           </div>
           <div class="card">
             <h3>Enterprise</h3>
-            <div class="prices">
-              <span class="was">$12,000<span class="unit">/mo</span></span>
-              <span class="now">$6,000<span class="unit">/mo</span></span>
-            </div>
+            <div class="prices"><span class="was">$12,000<span class="unit">/mo</span></span><span class="now">$6,000<span class="unit">/mo</span></span></div>
             <div class="offer">Limited time. 50% off.</div>
-            <ul>
-              <li>Unlimited full access user profiles linked to one firm subscription</li>
-              <li>Private cloud or on premises</li>
-              <li>Dedicated success engineer</li>
-            </ul>
-            <a class="btn outline w" href="#contact">Talk to Sales</a>
+            <ul><li>Unlimited full access user profiles linked to one firm subscription</li><li>Private cloud or on premises</li><li>Dedicated success engineer</li></ul>
+            <a class="btn accent w" href="#contact">Talk to Sales</a>
           </div>
         </div>
       </div>
@@ -148,6 +166,7 @@
     <!-- CONTACT -->
     <section id="contact" class="panel">
       <div class="inner max narrow">
+        <h2 class="pre-contact">Ready to set the Diamond Standard?</h2>
         <h2>Contact Us</h2>
         <p class="sub">Book a twenty minute demo. We will follow up with a calendar link.</p>
         <form class="form" onsubmit="event.preventDefault(); alert('Thanks. We will email you to schedule.');">
@@ -164,7 +183,7 @@
             </select>
           </label>
           <label class="full"><span>What would you like to see</span><textarea placeholder="Document review, research, briefs"></textarea></label>
-          <button class="btn primary">Request Demo</button>
+          <button class="btn accent">Request Demo</button>
         </form>
       </div>
     </section>
