@@ -171,3 +171,25 @@ a:hover{color:var(--text)}
 body, p, li, h1, h2, h3, h4, h5, h6, a, .lead, .meta, .checklist li, .bullets li, .price-card ul, .disclaimer, .pill, .sample-box h4 {
   color: #FFFFFF !important;
 }
+
+/* Reduce spacing in What Sets Us Apart */
+#who .checklist li { margin: 4px 0 !important; }
+
+/* Smaller hero subheading */
+.hero .lead { font-size: 18px !important; max-width: 100%; white-space: normal; }
+
+/* Extra space adjustments in hero */
+.hero .lead { margin-bottom: 28px !important; }
+.hero .cta-row { margin-bottom: 28px !important; }
+
+/* Hero refinements per client */
+.lead{font-size:18px !important; line-height:1.35; margin-bottom:10px !important;}
+.cta-row{margin-top:16px !important; margin-bottom:18px !important;}
+.meta{margin-top:10px !important;}
+
+/* Compact spacing for What Sets Us Apart */
+.feature-list p{margin:6px 0 10px 0;}
+.feature-list .checklist{padding-left:18px; margin:6px 0 10px 0;}
+.feature-list .checklist li{margin:6px 0;}
+
+.sample-box{display:none !important;}
