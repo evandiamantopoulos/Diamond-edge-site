@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Sign Up — The Diamond Edge Co.</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"/></head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.v3.css"/></head>
 <body>
 <header class="nav"><div class="container nav-inner"><a href="index.html" class="brand"><span class="wordmark">The Diamond Edge Co.</span></a>
 <nav class="links"><a href="index.html#who">Who We Are</a><a href="index.html#how">How We Can Help</a><a href="index.html#prices">Prices</a></nav>
@@ -14,5 +14,5 @@
 <div class="form-actions"><button class="btn btn-primary" type="submit">Request Demo</button><span class="small">We’ll never share your info.</span></div></form></div></main>
 <footer class="footer"><div class="container footer-inner"><div class="ft-left"><span class="ft-name">The Diamond Edge Co.</span></div>
 <div class="ft-meta"><a href="mailto:team@diamondedge.co">team@diamondedge.co</a></div></div></footer>
-<script src="script.js"></script><script>document.getElementById('signup-form').addEventListener('submit',function(e){e.preventDefault();const d=Object.fromEntries(new FormData(this).entries());try{const k='diamondedge_signups';const a=JSON.parse(localStorage.getItem(k)||'[]');a.push({...d,ts:new Date().toISOString()});localStorage.setItem(k,JSON.stringify(a));}catch(e){}window.location.href='thankyou.html';});</script>
+<script src="script.v3.js"></script><script>document.getElementById('signup-form').addEventListener('submit',function(e){e.preventDefault();const d=Object.fromEntries(new FormData(this).entries());try{const k='diamondedge_signups';const a=JSON.parse(localStorage.getItem(k)||'[]');a.push({...d,ts:new Date().toISOString()});localStorage.setItem(k,JSON.stringify(a));}catch(e){}window.location.href='thankyou.html';});</script>
 </body></html>
