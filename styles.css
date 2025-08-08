@@ -167,3 +167,7 @@ a:hover{color:var(--text)}
 .sample-box ul{margin:0;padding-left:18px}
 .disclaimer a{color:inherit;text-decoration:underline}
 .main-nav{gap:32px}
+
+body, p, li, h1, h2, h3, h4, h5, h6, a, .lead, .meta, .checklist li, .bullets li, .price-card ul, .disclaimer, .pill, .sample-box h4 {
+  color: #FFFFFF !important;
+}
