@@ -50,7 +50,7 @@ body{
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand img{height:22px;display:block}
 .main-nav{display:flex;gap:24px;align-items:center}
-.main-nav a{color:var(--sub);text-decoration:none;font-weight:500}
+.main-nav a{color:var(--text);text-decoration:none;font-weight:500}
 .main-nav a:hover{color:var(--text)}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer}
 .nav-toggle span{display:block;width:24px;height:2px;background:#cfd5df;margin:5px 0}
@@ -166,3 +166,4 @@ a:hover{color:var(--text)}
 .sample-box .sample-col{background:rgba(255,255,255,0.03);border-style:solid}
 .sample-box ul{margin:0;padding-left:18px}
 .disclaimer a{color:inherit;text-decoration:underline}
+.main-nav{gap:32px}
