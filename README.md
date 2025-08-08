@@ -1,6 +1,5 @@
-# Diamond Edge — Patch 2
-- Single brand label (removed duplicate logo/text)
-- Thinner typography (Inter 300/400), improved spacing
-- Deeper copy for “Who We Are” and Contract Review
-- Unified font color inside panels
-- CTA updated: “Ready to set the Diamond standard?”
+# The Diamond Edge Co. — Patch v5
+- Absolute asset paths
+- Versioned CSS/JS
+- No `vercel.json` (static defaults)
+- `/api/chat` serverless works on default runtime (add `OPENAI_API_KEY` to enable real answers)
