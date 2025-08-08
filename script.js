@@ -1,7 +1,6 @@
 // Footer year
 document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
 
-// Subtle starfield
 (function(){
   const canvas = document.getElementById('stars');
   const ctx = canvas.getContext('2d', { alpha:true });
