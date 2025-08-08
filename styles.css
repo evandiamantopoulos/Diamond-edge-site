@@ -193,3 +193,8 @@ body, p, li, h1, h2, h3, h4, h5, h6, a, .lead, .meta, .checklist li, .bullets li
 .feature-list .checklist li{margin:6px 0;}
 
 .sample-box{display:none !important;}
+
+/* 2x2 grid for How We Help */
+.cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:16px}
+@media (max-width: 1180px){.cards-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 640px){.cards-4{grid-template-columns:1fr}}
