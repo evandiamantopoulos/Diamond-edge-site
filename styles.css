@@ -62,3 +62,17 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter, -apple-s
   .hero h1{white-space:normal;font-size:34px}
   .hero .sub{font-size:16px}
 }
+
+
+/* Starlink-like spacing */
+.hero h1{font-size:42px; line-height:1.05; margin:0 0 28px; font-weight:400; letter-spacing:-0.01em; white-space:nowrap}
+.hero .sub{font-size:18px; line-height:1.5; margin:0 0 34px; opacity:.95}
+
+/* Starlink-like CTA: solid white button + subtle outline link */
+.btn{padding:14px 24px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:#ffffff; color:#0b0d10; font-weight:500}
+.btn:hover{background:#eaecef}
+.link{padding:12px 20px; border:1px solid rgba(255,255,255,0.35); border-radius:8px; text-decoration:none; color:#ffffff; opacity:1}
+.link:hover{background:rgba(255,255,255,0.06)}
+
+/* More breathing room from top and bottom like Starlink */
+.hero-content{padding:6vh 24px}
