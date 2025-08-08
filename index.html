@@ -1,142 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Diamond Edge Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: white;
-      background: url('background-stars.png') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      overflow-x: hidden;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 4rem;
-      position: absolute;
-      width: 100%;
-      top: 0;
-      z-index: 10;
-    }
-
-    .logo {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    nav a {
-      margin-left: 2rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 400;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    .hero h1 {
-      font-size: 2.75rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero p {
-      font-size: 1rem;
-      max-width: 600px;
-      margin-bottom: 2.5rem;
-      font-weight: 300;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .buttons a {
-      padding: 0.8rem 1.5rem;
-      border: 1px solid white;
-      border-radius: 6px;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-
-    .buttons a:first-child {
-      background-color: white;
-      color: black;
-      font-weight: 600;
-    }
-
-    .buttons a:last-child:hover {
-      background-color: white;
-      color: black;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 1.5rem 2rem;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 0.9rem;
-      }
-
-      .buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .buttons a {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <header>
-    <div class="logo">The Diamond Edge Co.</div>
-    <nav>
-      <a href="#">Who We Are</a>
-      <a href="#">How We Help</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact Us</a>
-    </nav>
-  </header>
-
-  <section class="hero">
+  <div class="hero">
     <h1>Sharper Decisions. Stronger Cases.</h1>
-    <p>AI built for legal teams — draft, review, and research with jurisdiction-specific, fully verified citations in minutes.</p>
-    <div class="buttons">
-      <a href="#">Book a Demo</a>
-      <a href="#">Contact Us</a>
-    </div>
-  </section>
-
+    <p class="subtitle">Secure AI for legal teams — draft, review, and research with verified citations in minutes.</p>
+    <a href="#contact" class="cta">Book a Demo</a>
+  </div>
+  <canvas id="starfield"></canvas>
+  <script src="script.js"></script>
 </body>
 </html>
