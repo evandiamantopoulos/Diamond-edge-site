@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Diamond Edge Co. — Sharper. Smarter. Legal AI.</title>
-  <meta name="description" content="AI contract review, legal research automation, and case brief generation for modern law firms."/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Diamond Edge Co.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.v5.css"/>
-  <link rel="icon" href="/assets/logo.svg">
-  <!-- build: v5 - 2025-08-08T05:24:29.033987Z -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="brand"><span class="wordmark">The Diamond Edge Co.</span></a>
-      <nav class="links">
+  <canvas id="stars"></canvas>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="The Diamond Edge Co.">
+        <img src="logo.svg" alt="The Diamond Edge Co. logo"/>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
         <a href="#who">Who We Are</a>
-        <a href="#how">How We Can Help</a>
-        <a href="#prices">Prices</a>
-        <a class="btn btn-outline" href="/signup.html">Sign Up</a>
+        <a href="#help">How We Help</a>
+        <a href="#pricing">Prices</a>
+        <a class="btn ghost" href="signup.html">Sign Up</a>
       </nav>
-      <button class="burger" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="diamond-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <h1>Sharper Decisions. <br class="br-md">Stronger Cases.</h1>
-        <p class="lead"> The Diamond Edge Co uses AI powered precision for law firms, contract review, legal research, and case brief drafting in minutes.</p>
+        <h1>Sharper Decisions. <br/>Stronger Cases.</h1>
+        <p class="lead">Secure AI for legal teams — draft, review, and research with verified citations in minutes.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="/signup.html">Book a Free Demo</a>
-          <a class="btn btn-ghost" href="#how">See How It Works</a>
+          <a class="btn primary" href="signup.html">Book a Free Demo</a>
+          <a class="btn secondary" href="#help">See How It Works</a>
         </div>
-        <div class="trust"><span>Security first • Private by design • Audit ready</span></div>
+        <p class="meta">Security first • Private by design • Audit ready</p>
       </div>
+      <div class="hero-glow"></div>
     </section>
 
-    <section id="who" class="section">
+    <section id="who" class="panel panel-grid">
       <div class="container grid-2">
-        <div class="panel glass">
+        <div class="card glass">
           <h2>Who We Are</h2>
-          <p>The Diamond Edge Co develops secure, outcome-driven AI solutions built for the unique demands of modern legal teams. We integrate seamlessly with your firm’s existing document systems, combining a private retrieval layer with intelligent workflows that accelerate legal review, research, and drafting without compromising a oversight.</p>
-          <ul class="ticks">
-            <li>Secure by Design – Isolated infrastructure, strict access controls, and comprehensive audit trails ensure end-to-end data security and compliance.</li>
-            <li>Verified Intelligence – Every AI-generated output is backed by its original legal source, with precise citations for verification.</li>
-            <li>Human-Centered Drafting – Redlines, summaries, and briefs are prepared as drafts for attorney review, ensuring accuracy and adherence to professional standards.</li>
-            <li>On-Demand Document Creation – From contracts and agreements to pleadings, motions, and compliance forms, our platform can generate, customize, and prepare virtually any legal document—tailored to your jurisdiction and practice area.</li>
-            <p>The Diamond Edge Co. empowers legal teams to work faster, smarter, and with greater precision—transforming the way legal services are delivered.</p>
+          <p>The Diamond Edge Co. builds secure, outcome‑driven AI for modern legal teams. We combine a private retrieval layer with jurisdiction‑aware templates and attorney‑in‑the‑loop workflows to accelerate review, research, and drafting—without compromising professional standards.</p>
+          <ul class="checklist">
+            <li><strong>Secure by Design</strong> — isolated cloud, role‑based access, encryption in transit & at rest, and complete audit trails.</li>
+            <li><strong>Verified Intelligence</strong> — every answer is backed by source citations to cases, statutes, and your DMS.</li>
+            <li><strong>Attorney‑in‑the‑Loop</strong> — drafts, redlines, and summaries are prepared for lawyer approval.</li>
+            <li><strong>On‑Demand Documents</strong> — generate and customize contracts, pleadings, motions, policies, and compliance forms for any jurisdiction.</li>
           </ul>
         </div>
-        <div class="panel media">
-          <div class="mockup">
-            <div class="mock-title">Contract Review</div>
-            <div class="mock-body">
-              <div class="mock-left">
-                <div class="clause">Indemnification Clause</div>
-                <div class="flag risk">Risk flag: broad language detected</div>
-                <div class="flag missing">Missing: liability cap</div>
-                <div class="flag note">Note: add force majeure carve‑out</div>
-              </div>
-              <div class="mock-right">
-                <div class="summary-title">Plain‑English summary</div>
-                <p>This agreement allocates open‑ended liability to the Vendor. Recommend: add a cap tied to fees, narrow indemnity to third‑party claims, and align limitation of liability with industry norms.</p>
-              </div>
+        <div class="card glass feature-list">
+          <h3>What sets us apart</h3>
+          <div class="pill-row">
+            <span class="pill">Jurisdiction‑aware drafting</span>
+            <span class="pill">Source‑linked findings</span>
+            <span class="pill">Policy‑aware checklists</span>
+            <span class="pill">Granular permissions</span>
+            <span class="pill">Enterprise SSO</span>
+          </div>
+          <div class="sample-box">
+            <div class="sample-col">
+              <h4>Risk Signals</h4>
+              <ul>
+                <li>Missing: liability cap</li>
+                <li>Overbroad indemnity</li>
+                <li>Add: force majeure carve‑out</li>
+              </ul>
+            </div>
+            <div class="sample-col">
+              <h4>One‑click Actions</h4>
+              <ul>
+                <li>Insert redlines</li>
+                <li>Export to memo</li>
+                <li>Attach citations</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="how" class="section">
+    <section id="help" class="panel">
       <div class="container">
-        <h2>How We Can Help</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Contract Review AI</h3>
-            <p>Upload agreements → receive risk flags, missing terms, suggested redlines, and a partner‑ready summary.</p>
+        <h2>How We Help</h2>
+        <div class="cards-3">
+          <div class="card glass">
+            <h3>Universal Document Review</h3>
+            <p>Upload any agreement or document. Receive risk flags, missing terms, suggested redlines, and a partner‑ready summary.</p>
             <ul class="bullets">
               <li>Policy‑aware checklists</li>
               <li>Auto‑generated redlines</li>
               <li>Source‑linked findings</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card glass">
             <h3>Legal Research Automation</h3>
-            <p>Ask natural language questions and get grounded answers with citations across your firm’s library and case law.</p>
+            <p>Ask natural‑language questions and get grounded answers with citations across your library and case law.</p>
             <ul class="bullets">
               <li>Citation extraction</li>
-              <li>Similar case discovery</li>
+              <li>Similar‑case discovery</li>
               <li>Export to memo</li>
             </ul>
           </div>
-          <div class="card">
-            <h3>Case Brief Generator</h3>
+          <div class="card glass">
+            <h3>Case & Brief Builder</h3>
             <p>Turn transcripts, exhibits, and notes into a structured brief with issues, facts, witnesses, and chronology.</p>
             <ul class="bullets">
               <li>Chronology builder</li>
@@ -105,66 +117,82 @@
             </ul>
           </div>
         </div>
+
+        <div class="cards-1 any-doc">
+          <div class="card glass">
+            <h3>Any Document. On Demand.</h3>
+            <p>We can generate and customize virtually <em>any</em> legal document for your jurisdiction and practice area — contracts, pleadings, motions, policies, HR and compliance forms, and more. We can also review <em>any</em> document you receive and prepare a clean, cited, attorney‑ready draft.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="prices" class="section section-tight">
+    <section id="pricing" class="panel">
       <div class="container">
         <h2>Prices</h2>
         <div class="pricing">
-          <div class="price card">
-            <div class="tier">Starter</div>
+          <div class="price-card">
+            <h3>Starter</h3>
             <div class="price">$1,500<span>/mo</span></div>
             <ul>
               <li>5 seats</li>
-              <li>Contract Review AI</li>
+              <li>Universal Document Review</li>
               <li>Email support</li>
             </ul>
-            <a class="btn btn-outline" href="/signup.html">Get Started</a>
+            <a class="btn primary w100" href="signup.html">Get Started</a>
           </div>
-          <div class="price-card featured">
+
+          <div class="price-card popular">
             <div class="badge">Most Popular</div>
-            <div class="tier">Pro</div>
+            <h3>Pro</h3>
             <div class="price">$3,000<span>/mo</span></div>
             <ul>
               <li>20 seats</li>
               <li>+ Legal Research Automation</li>
               <li>Priority support</li>
             </ul>
-            <a class="btn btn-primary" href="/signup.html">Choose Pro</a>
+            <a class="btn primary w100" href="signup.html">Choose Pro</a>
           </div>
-          <div class="price card">
-            <div class="tier">Enterprise</div>
+
+          <div class="price-card">
+            <h3>Enterprise</h3>
             <div class="price">Custom</div>
             <ul>
               <li>Unlimited seats</li>
               <li>Private cloud or on‑prem</li>
               <li>Dedicated success engineer</li>
             </ul>
-            <a class="btn btn-outline" href="/signup.html">Talk to Sales</a>
+            <a class="btn secondary w100" href="signup.html">Talk to Sales</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta section">
-      <div class="container cta-inner">
+    <section class="panel cta">
+      <div class="container center">
         <h2>Ready to set the Diamond standard?</h2>
         <p>Book a 20‑minute demo and see how much time your firm can save.</p>
-        <a class="btn btn-primary" href="/signup.html">Book a Demo</a>
+        <a class="btn primary" href="signup.html">Book a Demo</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="ft-left"><span class="ft-name">The Diamond Edge Co.</span></div>
-      <div class="ft-links"><a href="#who">Who We Are</a><a href="#how">How We Can Help</a><a href="#prices">Prices</a><a href="/signup.html">Sign Up</a></div>
-      <div class="ft-meta"><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:team@diamondedge.co">team@diamondedge.co</a></div>
+      <div class="brandline">
+        <img src="logo.svg" alt="" />
+      </div>
+      <nav>
+        <a href="#who">Who We Are</a>
+        <a href="#help">How We Help</a>
+        <a href="#pricing">Prices</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+      <p>© {year} The Diamond Edge Co. • <a href="mailto:team@diamondedge.co">team@diamondedge.co</a></p>
     </div>
   </footer>
 
-  <script src="/chatbot.v5.js" defer></script>
-  <script src="/script.v5.js" defer></script>
+  <script>document.currentScript.previousElementSibling.innerHTML = document.currentScript.previousElementSibling.innerHTML.replace("{year}", new Date().getFullYear());</script>
+  <script src="script.js"></script>
 </body>
 </html>
