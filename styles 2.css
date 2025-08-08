@@ -1,0 +1,30 @@
+/* Hero Section Adjustments */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Push content toward the top */
+    min-height: 100vh;
+    padding-top: 12vh; /* Adjust this number to move headline higher/lower */
+    text-align: center;
+}
+
+/* Headline Styling */
+.hero-container h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Subline Styling */
+.hero-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
