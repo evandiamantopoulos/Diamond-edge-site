@@ -1,25 +1,2 @@
-// Footer year
-document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
-
-(function(){
-  const canvas = document.getElementById('stars');
-  const ctx = canvas.getContext('2d', { alpha:true });
-  const DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
-  let W,H,stars=[],tick=0;
-  function resize(){ W=canvas.clientWidth=innerWidth; H=canvas.clientHeight=innerHeight;
-    canvas.width=Math.floor(W*DPR); canvas.height=Math.floor(H*DPR); ctx.setTransform(DPR,0,0,DPR,0,0); spawn(); }
-  function spawn(){ const density=0.00028; const count=Math.floor(W*H*density);
-    stars = Array.from({length:count}).map(()=>{
-      const r=Math.random(); let color='rgba(255,255,255,1)';
-      if(r<0.08) color='rgba(255,138,61,1)'; else if(r<0.16) color='rgba(122,162,255,1)';
-      return {x:Math.random()*W,y:Math.random()*H,vx:(Math.random()*0.12+0.03)*(Math.random()<0.5?1:-1),
-              vy:(Math.random()*0.08+0.02)*(Math.random()<0.5?1:-1),z:Math.random()*0.9+0.1,r:Math.random()*1.2+0.25,color};
-    }); }
-  function frame(){ tick++; ctx.clearRect(0,0,W,H); const tw=0.75+Math.sin(tick*0.02)*0.12;
-    for(const s of stars){ s.x+=s.vx*s.z*0.7; s.y+=s.vy*s.z*0.7;
-      if(s.x<-5) s.x=W+5; if(s.x>W+5) s.x=-5; if(s.y<-5) s.y=H+5; if(s.y>H+5) s.y=-5;
-      ctx.globalAlpha=Math.min(1, tw*(0.55+s.z*0.6)); ctx.fillStyle=s.color;
-      ctx.beginPath(); ctx.arc(s.x,s.y,s.r*s.z,0,Math.PI*2); ctx.fill();
-    } ctx.globalAlpha=1; requestAnimationFrame(frame); }
-  addEventListener('resize', resize, {passive:true}); resize(); frame();
-})();
+document.getElementById('year')&&(document.getElementById('year').textContent=new Date().getFullYear());
+(function(){const e=document.getElementById('stars'),t=e.getContext('2d',{alpha:!0}),a=Math.max(1,Math.min(2,window.devicePixelRatio||1));let n,i,o=[],r=0;function s(){n=e.clientWidth=innerWidth,i=e.clientHeight=innerHeight,e.width=Math.floor(n*a),e.height=Math.floor(i*a),t.setTransform(a,0,0,a,0,0),l()}function l(){const e=.00028,t=Math.floor(n*i*e);o=Array.from({length:t}).map((()=>{const e=Math.random();let t="rgba(255,255,255,1)";return e<.08?t="rgba(255,138,61,1)":e<.16&&(t="rgba(122,162,255,1)"),{x:Math.random()*n,y:Math.random()*i,vx:(.12*Math.random()+.03)*(Math.random()<.5?1:-1),vy:(.08*Math.random()+.02)*(Math.random()<.5?1:-1),z:.9*Math.random()+.1,r:1.2*Math.random()+.25,color:t}}))}function d(){r++,t.clearRect(0,0,n,i);const e=.75+.12*Math.sin(.02*r);for(const a of o)a.x+=.7*a.vx*a.z,a.y+=.7*a.vy*a.z,a.x<-5&&(a.x=n+5),a.x>n+5&&(a.x=-5),a.y<-5&&(a.y=i+5),a.y>i+5&&(a.y=-5),t.globalAlpha=Math.min(1,e*(.55+.6*a.z)),t.fillStyle=a.color,t.beginPath(),t.arc(a.x,a.y,a.r*a.z,0,2*Math.PI),t.fill();t.globalAlpha=1,requestAnimationFrame(d)}addEventListener('resize',s,{passive:!0}),s(),d()})();
