@@ -198,3 +198,19 @@ body, p, li, h1, h2, h3, h4, h5, h6, a, .lead, .meta, .checklist li, .bullets li
 .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:16px}
 @media (max-width: 1180px){.cards-4{grid-template-columns:repeat(2,1fr)}}
 @media (max-width: 640px){.cards-4{grid-template-columns:1fr}}
+
+/* Footer font consistency */
+.site-footer, .site-footer a, .footer-inner nav a {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em;
+}
+
+/* Footer typography: smaller & thinner to match logo scale */
+.site-footer .footer-inner nav a,
+.site-footer .footer-inner p,
+.site-footer .footer-inner a {
+  font-size: 12px !important;
+  font-weight: 420 !important;
+  letter-spacing: 0.01em;
+}
